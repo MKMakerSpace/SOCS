@@ -1,0 +1,55 @@
+{% extends "main/base.html" %}
+{% block content%}
+	{% if user.is_authenticated %}
+	<div class="container-fluid">	
+		<h2>Welcome to the Space Operation and Control System {{ user.username }}! </h1>
+	</div>	
+	    
+	<div class="container-fluid">		
+		<div class="row">
+			<div class="card" style="width: 14rem;">
+				<div class="card-body">
+					<h5 class="card-title">Broken Tools Form</h5>
+					<p class="card-text">Is something broken? </p>
+					<a href="#" class="btn btn-primary">Please let us know</a>
+				</div>
+			</div>
+				
+			<div class="card" style="width: 14rem;">
+				<div class="card-body">
+					<h5 class="card-title">Induction Request Form</h5>
+					<p class="card-text">Want to be inducted to use a tool?</p>
+					<a href="#" class="btn btn-primary">Ask here</a>
+				</div>
+			</div>
+				
+			<div class="card" style="width: 14rem;">
+				<div class="card-body">
+					<h5 class="card-title">Purchase Request Form</h5>
+					<p class="card-text">Want to make a larger purchase inline with our purchasing policy?</p>
+					<a href="#" class="btn btn-primary">Request here</a>
+				</div>
+			</div>
+				
+		</div>
+	</div>
+		
+		
+		
+
+
+
+
+
+
+		
+	{% else %}
+		<h2>Welcome to the Space Operation and Control System! </h1>
+		<h2>What is SOCS?</h2>
+		<p>The Space Operation & Control System is a series of programs and tools to help run a organisation. It's currently under development.</p>
+		<p> The majority of this site is for member viewing only, want to join? Find out more /here/!</p>
+	{% endif %}
+
+
+			
+{% endblock content %}
