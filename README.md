@@ -43,3 +43,7 @@ You will also need to create a new superuser to access the Django administrative
 `py manage.py createsuperuser`
 
 This will ask you to create credentials, then you will be able to log in to /admin
+
+## acknowledgements
+Currently building ontop of an excellent set of tutorials by Corey Schafer https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g
+Some icons are used from Font Awesome Free, https://fontawesome.com/
