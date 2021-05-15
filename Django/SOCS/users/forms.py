@@ -25,4 +25,4 @@ class UserUpdateForm(forms.ModelForm):
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile 
-        fields = ['emergency_Contact_Name', 'emergency_Contact_Phone']
+        fields = ['emergency_Contact_Name', 'emergency_Contact_Phone', 'device_mac_addresses']

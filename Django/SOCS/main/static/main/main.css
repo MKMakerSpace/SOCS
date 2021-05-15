@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 ul {
   margin: 0;
 }
+ 
 .navbar {
     background-color: #1E73BE;
 }
@@ -45,3 +46,4 @@ ul {
 .account-heading {
   font-size: 2.5rem;
 }
+
