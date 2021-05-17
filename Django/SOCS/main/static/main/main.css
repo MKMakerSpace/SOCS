@@ -2,6 +2,7 @@ body {
   background: #fafafa;
   color: #333333;
   margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,13 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 ul {
   margin: 0;
 }
- 
+
 .navbar {
-    background-color: #1E73BE;
+  background-color: #1E73BE;
 }
 .site-header .navbar-nav .nav-link {
   color: #cbd5db;
-
 }
 
 .site-header .navbar-nav .nav-link:hover {
@@ -47,3 +47,26 @@ ul {
   font-size: 2.5rem;
 }
 
+.footer  {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
+  color: #707070;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.footer a {
+  color:#707070;
+}
+
+.card {
+  min-height: 12rem;
+}
+
+.maincardbtn  {
+  position: absolute;
+  top: 8.5rem;
+}
