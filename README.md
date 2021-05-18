@@ -11,7 +11,7 @@ Basic Profiles for member management
 
 Various front end user links, ie links to external forms.
 
-Asset Register started - managed using admin interface. In future will print
+Asset Register started - managed using admin interface. In future will print to openly accessible page.
 
 ## Started
 Back End Tool for label printing, currently experimental using PyLabels. Currently plan to have a form which sends data to a node, connected to the label printer for local printing of labels.
