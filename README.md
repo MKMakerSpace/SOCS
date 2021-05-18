@@ -2,6 +2,22 @@
 
 Project to build a management system for Milton Keynes Makerspace.
 
+This project is not currently meant for external use, it is currently experimental and written as such. It is not intended for adaptation at this stage, and to do so will require knowledge of Django, if you do so it is of your own accord. Current versions are not production ready, and will require secret key changes etc.
+
+
+
+### Currently Implemented
+Basic Profiles for member management
+Various front end user links, ie links to external forms.
+Asset Register started - managed using admin interface. In future will print
+
+## Started
+Back End Tool for label printing, currently experimental using PyLabels. Currently plan to have a form which sends data to a node, connected to the label printer for local printing of labels.
+
+
+
+
+
 ## Planned Features 
 
 ### Front End 
