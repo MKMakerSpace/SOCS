@@ -8,7 +8,9 @@ This project is not currently meant for external use, it is currently experiment
 
 ### Currently Implemented
 Basic Profiles for member management
+
 Various front end user links, ie links to external forms.
+
 Asset Register started - managed using admin interface. In future will print
 
 ## Started
