@@ -10,9 +10,9 @@
 		<thead class="asset-table-head">
 			<tr>
 				<td>Name</td>
+				<td>Category</td>
 				<td>Manufacturer</td>
 				<td>Model</td>
-				<td>Serial #</td>
 				<td>Location</td>
 				<td>Owner</td>
 				<td>Description</td>
@@ -22,6 +22,7 @@
 				<td>Acquistion Date</td>
 				<td>Status</td>
 				<td>Warranty Period</td>
+				<td>Inspection Due</td>
 			</tr>
 		</thead>
 
@@ -29,9 +30,9 @@
 		<tbody>
 			<tr>
 				<td>{{ Asset.Name }}</td>
+				<td>{{ Asset.AssetType }}</td>
 				<td>{{ Asset.Manufacturer }}</td>
 				<td>{{ Asset.Model }}</td>
-				<td>{{ Asset.SerialNo }}</td>
 				<td>{{ Asset.Location }}</td>
 				<td>{{ Asset.Owner }}</td>
 				<td>{{ Asset.Description }}</td>
@@ -41,7 +42,24 @@
 				<td>{{ Asset.DateAcquired }}</td>
 				<td>{{ Asset.Status }}</td>
 				<td>{{ Asset.Warranty }}</td>
+				<td>{{ Asset.NextInspection }}</td>
 				{% endfor %}
+			</tr>
+			<tr>
+				<td>Totals</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>{{ total_purchase_value|floatformat:2 }}</td>
+				<td>{{ total_value|floatformat:2 }}</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 		</tbody>
 	</table>
