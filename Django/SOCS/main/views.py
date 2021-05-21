@@ -7,7 +7,17 @@ def home(request):
 	return render(request, 'main/home.html')
 
 def about(request):
-		return render(request, 'main/about.html')
+	title = 'About' #Set Page title	
+	context = {'title': title,}
+	return render(request, 'main/about.html', context=context)
+
 @login_required
 def data(request):
-		return render(request, 'main/data.html')
+	title = 'Data' #Set Page title	
+	context = {'title': title,}
+	return render(request, 'main/data.html', context=context)
+
+def status(request):
+	title = 'Status' #Set Page title	
+	context = {'title': title,}
+	return render(request, 'main/status.html', context=context)

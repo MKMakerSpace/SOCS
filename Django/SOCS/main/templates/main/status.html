@@ -1,0 +1,48 @@
+{% extends "main/base.html" %}
+{% block content%}
+<div class="container-fluid">
+	<h1>Services Status</h1>
+	<p>This page shows the status of various Makerspace related services. Last updated (date)</p>
+</div>
+<!-- Text here added as placeholder, this will all be pulled from a database or some such every time the page is loaded. -->
+<div class="container" style="padding-bottom: 1rem;">
+	<div class="row">
+		<div class="col-md">
+			<div class="card text-white bg-success" style="width: 12rem;height: 12rem;border-radius: 50%">
+				<div class="status-up-card-body">
+					<h1 class="up-card-text text-center mb-4">#</h1>
+					<h1 class="up-card-title text-center">UP</h1>
+				</div>
+			</div>
+		</div>
+		<div class="col-md">
+			<div class="card text-white bg-danger" style="width: 12rem;height: 12rem;border-radius: 50%">
+				<div class="status-down-card-body">
+					<h1 class="down-card-text text-center mb-4">#</h1>
+					<h1 class="down-card-title text-center">DOWN</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid status-alert-container">
+	<div class="alert alert-success" role="alert">
+		<h4 class="alert-heading">Internet Connection</h4>
+		<p>(Company) Fibre</p>
+	</div>
+</div>
+<div class="container-fluid status-alert-container">
+	<div class="alert alert-danger" role="alert">
+		<h4 class="alert-heading">MACScanner</h4>
+		<p>MACScanner is not currently running</p>
+	</div>
+</div>
+<div class="container-fluid status-alert-container">
+	<div class="alert alert-success" role="alert">
+		<h4 class="alert-heading">Service Name</h4>
+		<p>Details of service</p>
+	</div>
+</div>
+
+{% endblock content %}

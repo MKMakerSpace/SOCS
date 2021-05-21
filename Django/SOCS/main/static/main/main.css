@@ -66,7 +66,35 @@ ul {
   min-height: 12rem;
 }
 
+.home-cards {
+  padding: 1rem 1rem 1rem 1rem
+}
+
 .maincardbtn  {
   position: absolute;
   top: 8.5rem;
+}
+
+.status-up-card {
+  background: #008000;
+}
+.status-up-card-body h1 {
+  color:#ffffff;
+}
+
+.status-down-card {
+  background: #FF0000;
+}
+.status-down-card-body h1 {
+  color:#ffffff;
+}
+
+.status-alert-container {
+  padding-top: 0.5rem;
+}
+
+.asset-table-head {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }

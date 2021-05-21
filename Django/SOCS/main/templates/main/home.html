@@ -5,72 +5,59 @@
 	<h2>Welcome to the Space Operation and Control System {{ user.username }}! </h2>
 </div>	
 
-<div class="container-fluid">		
-	<div class="row">
+<div class="container-fluid home-card-container .mx-auto">		
+	<div class="row mx-auto">
 
-		<div class="col-lg-4">
-			<div class="card" style="width: 20rem;">	
-				<div class="card-body">
-					<h5 class="card-title">Broken Tools Form</h5>
-					<p class="card-text">Is something broken? </p>
-					<a href="#" class="btn btn-primary maincardbtn">Please let us know</a>
-				</div>
-			</div>
-
-			<div class="card" style="width: 20rem;">
-				<div class="card-body">
-					<h5 class="card-title">Project Identification & Storage</h5>
-					<p class="card-text">Need to leave a project in the space? Register and label it! </p>
-					<a href="#" class="btn btn-primary maincardbtn">Here!</a>
-				</div>
+		<div class="card" style="width: 20rem;">	
+			<div class="card-body">
+				<h5 class="card-title">Broken Tools Form</h5>
+				<p class="card-text">Is something broken? </p>
+				<a href="#" class="btn btn-primary maincardbtn">Please let us know</a>
 			</div>
 		</div>
 
-		<div class="col-lg-4">	
-			<div class="card" style="width: 20rem;">
-				<div class="card-body">
-					<h5 class="card-title">Induction Request Form</h5>
-					<p class="card-text">Want to be inducted to use a tool?</p>
-					<a href="#" class="btn btn-primary maincardbtn">Ask here</a>
-				</div>
+		<div class="card" style="width: 20rem;">
+			<div class="card-body">
+				<h5 class="card-title">Project Identification & Storage</h5>
+				<p class="card-text">Need to leave a project in the space? Register and label it! </p>
+				<a href="#" class="btn btn-primary maincardbtn">Here!</a>
 			</div>
+		</div>
+		<div class="card" style="width: 20rem;">
+			<div class="card-body">
+				<h5 class="card-title">Induction Request Form</h5>
+				<p class="card-text">Want to be inducted to use a tool?</p>
+				<a href="#" class="btn btn-primary maincardbtn">Ask here</a>
+			</div>
+		</div>
 
-			<div class="card" style="width: 20rem;">
-				<div class="card-body">
-					<h5 class="card-title">Extra</h5>
-					<p class="card-text">Extra?</p>
-					<a href="#" class="btn btn-primary maincardbtn">Extra</a>
-				</div>
+		<div class="card" style="width: 20rem;">
+			<div class="card-body">
+				<h5 class="card-title">Extra</h5>
+				<p class="card-text">Extra?</p>
+				<a href="#" class="btn btn-primary maincardbtn">Extra</a>
 			</div>
 		</div>	
 
-		<div class="col-lg-4">
-			<div class="card" style="width: 20rem;">
-				<div class="card-body">
-					<h5 class="card-title">Purchase Request Form</h5>
-					<p class="card-text">Want to make a larger purchase inline with our purchasing policy?</p>
-					<a href="#" class="btn btn-primary maincardbtn">Request here</a>
-				</div>
-			</div>
-
-			<div class="card" style="width: 20rem;">
-				<div class="card-body">
-					<h5 class="card-title">Extra</h5>
-					<p class="card-text">Extra?</p>
-					<a href="#" class="btn btn-primary maincardbtn">Extra</a>
-				</div>
+		<div class="card" style="width: 20rem;">
+			<div class="card-body">
+				<h5 class="card-title">Purchase Request Form</h5>
+				<p class="card-text">Want to make a larger purchase inline with our purchasing policy?</p>
+				<a href="#" class="btn btn-primary maincardbtn">Request here</a>
 			</div>
 		</div>
-
 	</div>
 </div>
 
 
+
 {% else %}
-<h2>Welcome to the Space Operation and Control System! </h1>
-	<h2>What is SOCS?</h2>
-	<p>The Space Operation & Control System is a series of programs and tools to help run a organisation. It's currently under development.</p>
-	<p> The majority of this site is for member viewing only, want to join? Find out more /here/!</p>
+<div class="container-fluid">	
+	<h2>Welcome to the Space Operation and Control System! </h1>
+		<h2>What is SOCS?</h2>
+		<p>The Space Operation & Control System is a series of programs and tools to help run a organisation. It's currently under development.</p>
+		<p> The majority of this site is for member viewing only, want to join? Find out more /here/!</p>
+	</div>	
 	{% endif %}
 
 

@@ -1,5 +1,49 @@
 {% extends "main/base.html" %}
 {% block content%}
+<div class="container-fluid">
 	<h1>Makerspace Asset List</h1>
+	<p> We currently have {{num_assets}} assets registered. </p>
+</div>
+<div class="container-fluid">
+	<h1>List of Assets</h1>
+	<table class="table table-striped sticky-header">
+		<thead class="asset-table-head">
+			<tr>
+				<td>Name</td>
+				<td>Manufacturer</td>
+				<td>Model</td>
+				<td>Serial #</td>
+				<td>Location</td>
+				<td>Owner</td>
+				<td>Description</td>
+				<td>Notes</td>
+				<td>Purchase Price</td>
+				<td>Current Value</td>
+				<td>Acquistion Date</td>
+				<td>Status</td>
+				<td>Warranty Period</td>
+			</tr>
+		</thead>
 
+		{% for Asset in asset_data %}
+		<tbody>
+			<tr>
+				<td>{{ Asset.Name }}</td>
+				<td>{{ Asset.Manufacturer }}</td>
+				<td>{{ Asset.Model }}</td>
+				<td>{{ Asset.SerialNo }}</td>
+				<td>{{ Asset.Location }}</td>
+				<td>{{ Asset.Owner }}</td>
+				<td>{{ Asset.Description }}</td>
+				<td>{{ Asset.Notes }}</td>
+				<td>{{ Asset.PurchasePrice }}</td>
+				<td>{{ Asset.Value }}</td>
+				<td>{{ Asset.DateAcquired }}</td>
+				<td>{{ Asset.Status }}</td>
+				<td>{{ Asset.Warranty }}</td>
+				{% endfor %}
+			</tr>
+		</tbody>
+	</table>
+</div>
 {% endblock content %}

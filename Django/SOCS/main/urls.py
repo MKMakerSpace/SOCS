@@ -8,5 +8,6 @@ urlpatterns = [
     path('data/', views.data, name="main-data"),
     path('admin/', views.data, name="main-admin"),
     path('assets/', include('assets.urls'), name= "assets"),
+    path('status/', views.status, name="main-status")
 
 ]

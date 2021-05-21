@@ -5,41 +5,40 @@ Project to build a management system for Milton Keynes Makerspace.
 This project is not currently meant for external use, it is currently experimental and written as such. It is not intended for adaptation at this stage, and to do so will require knowledge of Django, if you do so it is of your own accord. Current versions are not production ready, and will require secret key changes etc.
 
 
-
 ### Currently Implemented
-Basic Profiles for member management
+Basic Profiles for member management.
 
 Various front end user links, ie links to external forms.
 
-Asset Register started - managed using admin interface. In future will print to openly accessible page.
+Asset Register started - managed using admin interface. In future will print to member accessible page.
 
 ## Started
 Back End Tool for label printing, currently experimental using PyLabels. Currently plan to have a form which sends data to a node, connected to the label printer for local printing of labels.
-
-
-
 
 
 ## Planned Features 
 
 ### Front End 
 
-Django Project 
+Django Project - Web App - access to member tools, database management etc.
 
-Web app 
+Membership Management - Databases, emails, payments, allow members to make accounts etc. Member Tools, Forms ie broken tools, Storage Label Generation
 
-Membership Management - Databases, emails, payments, allow members to make accounts etc. Member Tools, Forms ie broken tools, Storage Label Generation -[]
+Automation Control tools - light controller, temp controller etc. 
 
-Automation Control tools - light controller, heat controller etc.  -[]
+Access Control Management - Equipment Status - Add/Remove permissions etc Equipment Nodes
 
-Access Control Management - Equipment Status - Add/Remove permissions etc Equipment Nodes - Octoprint Nodes etc.  -[]
+Octoprint - Manage user accounts across all Octoprint instances using Octoprint REST API - Add an account, change passwords etc. Have octoprint mirror django accounts? Disply statistics from Octoprint/associated, eg Power consumption, Print time, use status etc.
 
-Data & Statistics - View current states about the space etc. -[]
+Data & Statistics - View current states about the space etc.
+
+MACScanner integration?
 
 ### Back end
 
- Docker/Portainer MQTT PostgreSQL Automation Scripts (NodeRed, straight NodeJS/Python etc) Access Control
+Docker/Portainer MQTT PostgreSQL Automation Scripts (NodeRed, straight NodeJS/Python etc) Access Control
 
+Manage Octoprint backups/data
 
 
 ## Development Environment

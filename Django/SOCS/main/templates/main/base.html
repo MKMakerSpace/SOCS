@@ -35,13 +35,17 @@
 					<div class="navbar-nav mr-auto">
 						<a class="nav-item nav-link" href="{% url 'main-about' %}">About</a>
 						{% if user.is_authenticated %}
+						<a class="nav-item nav-link" href="{% url 'main-status' %}">Status</a>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="{% url 'main-data' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Data
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="assets">Assets</a>
+								<a class="dropdown-item" href="{% url 'main-data' %}">Data</a>
+								<a class="dropdown-item" href="{% url 'assets-index' %}">Assets</a>
 							</div>
+
+
 						</li>
 						
 						{% endif%}
@@ -71,10 +75,10 @@
 				</div>
 				{% endfor %}
 				{%endif %}
-				{% block content %}{% endblock %}
 			</div>
 		</div>
 	</main>
+{% block content %}{% endblock %}
 
 	<footer>
 		<div class="container-fluid footer">
